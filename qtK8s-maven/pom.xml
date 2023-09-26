@@ -13,7 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>qtk8s-maven</name>
-	<description>Quick Turnaround K8S Showcase for Maven</description>
+	<description>Quick-Response K8S Showcase for Maven</description>
 
 	<properties>
 		<java.version>17</java.version>
