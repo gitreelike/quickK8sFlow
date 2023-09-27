@@ -18,7 +18,7 @@ You will need the following tools
 
 # Legal
 
-All contents of this repository are provided under the license as laid out in the `LICENSE` file.
+All contents of this repository except the slides.pdf are provided under the license as laid out in the `LICENSE` file.
 
 brought to you by _akquinet_ https://www.akquinet.de .
 
