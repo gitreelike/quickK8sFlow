@@ -19,6 +19,7 @@ script_dir="$(dirname "$(readlink "$0")")"
 	cd "$script_dir"/../../../../k8s-conf
 
   # we need to invalidate the old containers with the possibly old images
+  # this can also be achieved by restarting all the relevant things via "kubectl rollout restart" after "kubectl apply"
 	kubectl delete -f deployment.yaml || true
 
 	# install the system

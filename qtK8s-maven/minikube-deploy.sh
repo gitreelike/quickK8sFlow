@@ -75,6 +75,11 @@ original_ctx=$(current_ctx)
   fi
 
   echo Deploying our application to K8S
+
+  # we need to invalidate the old containers with the possibly old images
+  # this can also be achieved by restarting all the relevant things via "kubectl rollout restart" after "kubectl apply"
+  kubectl delete -f deployment.yaml || true
+
   kubectl apply -f "$k8s_config_dir"/deployment.yaml
 
   echo Waiting for deployment to finish
